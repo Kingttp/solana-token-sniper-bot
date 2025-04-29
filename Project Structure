@@ -1,0 +1,39 @@
+solana-token-sniper-bot/
+├── .github/
+│   └── workflows/
+│       └── ci.yml               # GitHub Actions CI workflow
+├── components/
+│   ├── ActivityLog.tsx          # Component to display bot activity logs
+│   ├── SettingsPanel.tsx        # Component for bot configuration
+│   ├── StatusIndicator.tsx      # Component showing bot running status
+│   ├── TokenList.tsx            # Component to display detected tokens
+│   ├── TradeHistory.tsx         # Component to display trade history
+│   └── WalletContextProvider.tsx # Wallet connection provider
+├── lib/
+│   ├── TokenDetector.ts         # Detects new tokens on Solana
+│   ├── TokenValidator.ts        # Validates tokens before trading
+│   ├── TradingEngine.ts         # Handles trading on sniper.xyz
+│   ├── WebhookServer.ts         # Server for Helius webhooks
+│   ├── types.ts                 # TypeScript type definitions
+│   └── utils.ts                 # Utility functions
+├── pages/
+│   ├── _app.tsx                 # Next.js app wrapper
+│   ├── _document.tsx            # Custom document component
+│   ├── api/
+│   │   └── webhook.ts           # API route for Helius webhooks
+│   ├── index.tsx                # Landing page
+│   └── dashboard.tsx            # Main dashboard page
+├── public/
+│   ├── favicon.ico              # Site favicon
+│   └── logo.svg                 # Site logo
+├── styles/
+│   └── globals.css              # Global styles
+├── .env.example                 # Example environment variables
+├── .eslintrc.json               # ESLint configuration
+├── .gitignore                   # Git ignore file
+├── LICENSE                      # MIT License
+├── next.config.js               # Next.js configuration
+├── package.json                 # Dependencies and scripts
+├── README.md                    # Project documentation
+├── tailwind.config.js           # Tailwind CSS configuration
+└── tsconfig.json                # TypeScript configuration
